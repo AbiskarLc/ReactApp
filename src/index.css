@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Mulish', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +8,111 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar{
+   background-color: #fff !important;
+}
+.navbar-brand{
+  font-size: 1.9rem;
+  color: #565387;
+}
+
+.navbar a{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.nav_bg h1{
+ font-size: 1.9rem;
+  background: -webkit-linear-gradient(red,rgb(50,56,125));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  cursor: pointer;
+  
+}
+
+.nav_bg h1:hover{
+  background: -webkit-linear-gradient(black,rgb(50,56,125));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  
+}
+
+
+
+.navbar a:hover{
+
+  color:  skyblue;
+}
+
+.brand-name{
+  
+  background: -webkit-linear-gradient(skyblue,rgb(50,56,125));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  
+}
+
+.btn-get-started{
+  width: 120px;
+  height: 30px;
+  text-align: center;
+ font-size: 20px;
+ background-color: white;
+ color: skyblue;
+ border: 2px solid skyblue;
+ border-radius: 10px;
+ font-size: 16px;
+ text-decoration: none;
+ cursor: pointer;
+ transition: 1s;
+}
+
+.btn-get-started:hover{
+  background-color: skyblue;
+  color: white;
+  transform: translateX(5px);
+}
+
+
+#header .animated{
+
+  animation: moveon 2s ease-in-out  infinite alternate-reverse both;
+}
+
+/* @-webkit-keyframes moveon{
+  0%{
+    transform: translate(10px);y
+  }100%{
+    transform: translate(-10px);
+  }
+} */
+.animated{
+  width: 500px;
+}
+@keyframes moveon {
+  0%{
+    transform: translatey(10px);
+  }100%{
+    transform: translatey(-10px);
+  }
+  
+}
+
+.navbar .activee{
+  
+  font-weight: bold;
+  color: skyblue;
+  border-bottom: 2px solid #565387;
+}
+
+
+
+@media  (max-width:800px) {
+
+  .animated{
+    width: 300px;
+  }
+  
 }
